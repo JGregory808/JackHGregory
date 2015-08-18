@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <title>Jack Gregory</title>
+    
+    
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	
+	<link rel="stylesheet" href="responsive-nav-2.js-master/responsive-nav.css">
+	<script src="responsive-nav-2.js-master/responsive-nav.js"></script>
+
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Awesome Description Here"> 
+</head>
+
+<body>
+	
+	<img id="ham-icon" src="images/menu-alt-512.png"></img>
+	<div class="bigwrap">
+
+		<nav class="menu">
+    
+    		<ul>
+    			<li><a href="index.html">Home</a><div class="line"></div></li>
+    			<li><a href="aboutme.html">About Me</a><div class="line"></div></li>
+    			<li><a href="portfolio.html">Portfolio</a><div class="line"></div></li>
+    			<li><a href="resume.html">Resume</a><div class="line"></div></li>
+    			<li><a href="contactme.html">Contact Me</a></li>
+			</ul>
+		
+		</nav>
+		
+		<div class="menuBar">
+	
+			<nav class="nav-collapse">
+  				<ul>
+    				<li><a href="index.html">Home</a></li>
+    				<li><a href="aboutme.html">About Me</a></li>
+    				<li><a href="portfolio.html">Portfolio</a></li>
+    				<li><a href="resume.html">Resume</a></li>
+    				<li><a href="contactme.html">Contact Me</a></li>
+ 			 	</ul>
+			</nav>
+		
+		</div>
+	
+		<div id="content">
+		
+			<div id="spacer"></div>
+			<div id="welcome">
+				<h1 id="name">Hi,<br />My name is Jack.</h1>
+				<h6 id="smallD">Web and iOS Developer | Business and Computer Science Dual-Degree</h6>
+			</div>	
+			 
+		</div>
+		
+			<div class="push"></div>
+	
+	</div>
+	
+	
+	<footer>
+	
+		<div id="footercontent">
+			<p>Copyright 2015 &mdash; <b><a href="https://www.linkedin.com/pub/jack-gregory/6a/5a0/836">LinkedIn</a></b>
+			 | <b><a href="http://facebook.com/jgregory808/">Facebook</a></b>
+			  | <b><a href="http://instagram.com/jgregdarling/">Instagram</a></b></p>
+		</div>
+		
+	</footer>
+	
+	<script>
+
+
+	
+		$(document).ready(function() {
+      		$('.bigwrap, footer').fadeIn(1000);
+		});
+		
+			
+	var nav = responsiveNav(".nav-collapse", { // Selector
+  animate: true, // Boolean: Use CSS3 transitions, true or false
+  transition: 284, // Integer: Speed of the transition, in milliseconds
+  label: "Menu", // String: Label for the navigation toggle
+  insert: "before", // String: Insert the toggle before or after the navigation
+  customToggle: "ham-icon", // Selector: Specify the ID of a custom toggle
+  closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+  openPos: "relative", // String: Position of the opened nav, relative or static
+  navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+  navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
+  jsClass: "js", // String: 'JS enabled' class which is added to  element
+  init: function(){}, // Function: Init callback
+  open: function(){}, // Function: Open callback
+  close: function(){} // Function: Close callback
+});
+	
+	</script>
+
+</body>
+</html>
+

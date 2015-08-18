@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+    <title>Jack Gregory | About Me</title>
+    
+    
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	
+	<link rel="stylesheet" href="responsive-nav-2.js-master/responsive-nav.css">
+	<script src="responsive-nav-2.js-master/responsive-nav.js"></script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Awesome Description Here"> 
+</head>
+
+<body>
+	
+	<img id="ham-icon" src="images/menu-alt-512.png"></img>
+	<div class="bigwrap">
+
+		<nav class="menu">
+    
+    		<ul>
+    			<li><a href="index.html">Home</a><div class="line"></div></li>
+    			<li><a href="aboutme.html">About Me</a><div class="line"></div></li>
+    			<li><a href="portfolio.html">Portfolio</a><div class="line"></div></li>
+    			<li><a href="resume.html">Resume</a><div class="line"></div></li>
+    			<li><a href="contactme.html">Contact Me</a></li>
+			</ul>
+		
+		</nav>
+		
+		<div class="menuBar">
+	
+			<nav class="nav-collapse">
+  				<ul>
+    				<li><a href="index.html">Home</a></li>
+    				<li><a href="aboutme.html">About Me</a></li>
+    				<li><a href="portfolio.html">Portfolio</a></li>
+    				<li><a href="resume.html">Resume</a></li>
+    				<li><a href="contactme.html">Contact Me</a></li>
+ 			 	</ul>
+			</nav>
+		
+		</div>
+		
+		<div class="menuspace"></div>
+	
+		<div class="backpage">
+		
+			<h1>Here's a little about myself</h1>
+			<img id="profile" src="images/profile.jpg"><img>
+			<p>I was born and raised in the state of Hawaii and, ever since I was just a 
+			few years old, have always had a strong passion for technology. The sheer fact 
+			that such small devices could hold such a large amount of information heavily 
+			intrigued me. Before I knew it, I was tearing apart old computers, modifying 
+			standard factory hardware and software on miscellaneous devices, and becoming 
+			even more amazed at the power of and potential that technology has in our 
+			daily lives.</p>
+			<p>As I grew older and into my high school years, I started to become more 
+			interested in the ways in which people and businesses can use technology to 
+			make their lives and operations more efficient. When college application season 
+			rolled around toward the last half of my career at 'Iolani School, I started to 
+			consider what exactly I wanted to do in my future. I knew that I wanted to do something related to technology, business, and science, 
+			but I really did not know what. After countless hours of researching schools, 
+			I narrowed down my choices to schools with programs that would allow me to 
+			simultaneously pursue both my technological and business interests. After all 
+			was said and done, I was blessed to be accepted into multiple outstanding 
+			programs that would allow me to carry my interests to the next level.</p>
+			<p>I am currently a sophomore in Boston University's Questrom School of Business 
+			pursuing a Bachelor of Science in Business Administration with a concentration 
+			in Management Information Systems, simultaneously pursuing a Bachelor of Arts 
+			in Computer Science in the College of Arts and Sciences. As of now, I am working 
+			as a summer intern at <a href=http://datahouse.com/>DataHouse</a>, communicating 
+			with clients to develop websites and applications that fit their specific IT needs.</p>
+			<p>In addition to my internship, I am currently teaching myself HTML, CSS, JavaScript,
+			jQuery, PHP, and Swift through online resources such as Udemy, CodeSchool, CodeAcademy, 
+			and Treehouse. In fact, I built this website completely from scratch using the skills I
+			started to teach myself at the beginning of summer 2015; there is no CMS to be found here.</p>
+			<p>Outside of my tech and professional life, I spend the majority of my time outdoors.
+			Whether it be hiking, running, or going to the beach, I love to enjoy the beauty of Hawaii
+			every second that I can. Although I love Boston, there really is no place like home.</p>
+			 
+		</div>
+		
+			<div class="push"></div>
+	
+	</div>
+	
+	
+	<footer>
+	
+		<div id="footercontent">
+			<p>Copyright 2015 &mdash; <b><a href="https://www.linkedin.com/pub/jack-gregory/6a/5a0/836">LinkedIn</a></b>
+			 | <b><a href="http://facebook.com/jgregory808/">Facebook</a></b>
+			  | <b><a href="http://instagram.com/jgregdarling/">Instagram</a></b></p>
+		</div>
+		
+	</footer>
+	
+<script>
+
+var nav = responsiveNav(".nav-collapse", { // Selector
+  animate: true, // Boolean: Use CSS3 transitions, true or false
+  transition: 284, // Integer: Speed of the transition, in milliseconds
+  label: "Menu", // String: Label for the navigation toggle
+  insert: "before", // String: Insert the toggle before or after the navigation
+  customToggle: "ham-icon", // Selector: Specify the ID of a custom toggle
+  closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+  openPos: "relative", // String: Position of the opened nav, relative or static
+  navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+  navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
+  jsClass: "js", // String: 'JS enabled' class which is added to  element
+  init: function(){}, // Function: Init callback
+  open: function(){}, // Function: Open callback
+  close: function(){} // Function: Close callback
+});
+
+
+$(document).ready(function() {
+      $('.bigwrap, footer').fadeIn(1000);
+});
+
+if ( $(window).width() > 640) {     
+  $(document).ready(function() {
+    $('#fullpage').fullpage();
+    $.fn.fullpage.setAutoScrolling(false);
+    $.fn.fullpage.setFitToSection(false);
+});
+}
+else {
+  $(document).ready(function() {
+    $('#fullpage').fullpage();
+    $.fn.fullpage.setAutoScrolling(false);
+    $.fn.fullpage.setFitToSection(false);
+});
+}
+
+</script>
+
+
+</body>
+</html>
+
